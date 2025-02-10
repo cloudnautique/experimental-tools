@@ -6,14 +6,14 @@ Share Tools: Get GSC Properties, Inspect URL, Get Top Keywords, Get URLs for Pro
 ---
 Name: Get GSC Properties
 Description: Returns the list of site URLs (properties) from the GSC console
-Credential: ../credential
+Credential: github.com/obot-platform/tools/google/credential
 
 #!/usr/bin/env node ${GPTSCRIPT_TOOL_DIR}/index.js fetchGSCProperties
 
 ---
 Name: Inspect URL
 Description: Inspects a specific URL in Google Search Console
-Credential: ../credential
+Credential: github.com/obot-platform/tools/google/credential
 Params: property: The GSC property id
 Params: url: The URL under the property to analyze
 
@@ -22,7 +22,7 @@ Params: url: The URL under the property to analyze
 ---
 Name: Get Top Keywords
 Description: Retrieves the top performing keywords for a specific URL
-Credential: ../credential
+Credential: github.com/obot-platform/tools/google/credential
 Params: property: The GSC property id
 Params: url: The URL under the property to analyze
 
@@ -31,7 +31,7 @@ Params: url: The URL under the property to analyze
 ---
 Name: Get URLs for Property
 Description: Returns all URLs for a specific GSC property
-Credential: ../credential
+Credential: github.com/obot-platform/tools/google/credential
 Params: property: The GSC property id
 
 #!/usr/bin/env node ${GPTSCRIPT_TOOL_DIR}/index.js getUrlsForProperty
@@ -46,4 +46,4 @@ Google Search Console
 
 ---
 !metadata:*:oauth
-google-search-console
+google
